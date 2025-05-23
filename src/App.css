@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 1;
+  box-sizing: border-box;
+}
+p
+{
+  margin: 1;
+}
+
+/* Contenedor que alinea las cards en fila y las separa */
+.container {
+  display: flex;                   /* Layout horizontal */
+  gap: 20px;                      /* Espacio entre cards */
+  padding: 20px;
+  justify-content: center;        /* Centra horizontalmente */
+  flex-wrap: wrap;                /* Permite que baje en pantallas chicas */
+  background: #f5f7fa;            /* Fondo claro suave */
+}
+
+/* Cada tarjeta producto */
+.card {
+  background: white;              /* Fondo blanco */
+  border-radius: 12px;            /* Bordes redondeados */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Sombra suave */
+  padding: 20px;
+  width: 250px;                  /* Ancho fijo para cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;            /* Centra el contenido */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-8px);    /* Levanta un poco al pasar el mouse */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Título del producto */
+.card h3 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: #222;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* Precio */
+.card p {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Botón moderno */
+.card button {
+  background-color: #007BFF;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,123,255,0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px 18px rgba(0,86,179,0.6);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.card p {
+  margin: 0 0 20px;
+  font-weight: 600;
+  color: #555;
+}
+
+.card button {
+  background-color: #007BFF;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+

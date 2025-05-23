@@ -1,0 +1,37 @@
+
+/* Estilo para la barra de navegación */
+nav {
+  background-color: #333; /* Fondo gris oscuro */
+  padding: 10px 20px;     /* Espacio interno arriba/abajo y lados */
+}
+
+/* Quita los puntos y alinea horizontalmente los ítems */
+nav ul {
+  list-style: none;       /* Sin viñetas */
+  margin: 0;              /* Sin margen externo */
+  padding: 0;             /* Sin relleno interno */
+  display: flex;          /* Flexbox para poner elementos en fila */
+  justify-content: center;
+
+}
+
+/* Espacio a la derecha de cada ítem de la lista */
+nav ul li {
+  margin-right: 20px;     /* Separación entre cada enlace */
+  color: aliceblue;
+}
+
+/* Estilo para los enlaces */
+nav ul li a {
+  color: white;           /* Texto blanco */
+  text-decoration: none;  /* Quita el subrayado */
+  font-weight: 600;       /* Texto un poco más grueso */
+  padding: 8px 12px;      /* Espacio interno del enlace */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de fondo al pasar el mouse */
+  border-radius: 4px;     /* Bordes redondeados */
+}
+
+/* Cuando el cursor está sobre el enlace */
+nav ul li a:hover {
+  background-color: #555; /* Cambia el fondo a gris medio */
+}
